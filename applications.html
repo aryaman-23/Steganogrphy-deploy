@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///C:/Users/Aryaman%20agarwal/Desktop/aa/ary.html -->
+<html lang="eng"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <title>Steganography</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='applications_files/style.css') }}">
+
+ </head>
+ <body>
+   <header>
+      <div class="main">
+         <a href="https://en.wikipedia.org/wiki/Steganography">ALL ABOUT STEGANOGRAPHY</a>
+
+      <div class="Text">
+         <h1>
+            Hiding Image-2 in Image-1
+         </h1>
+      </div>
+
+      <div class="select1"> 
+       <form action = {{url_for('upload')}} method="POST" enctype="multipart/form-data">
+        <h1>Select Image 1</h1>
+        <input type="File" name = 'img1' accept="image/*">
+       
+       <h1>Select Image 2</h1>
+        <input type="File" name = 'img2' accept="image/*">
+        <br><br><br><input type="submit" name="upload" value="UPLOAD" >
+
+
+       </form>
+      </div>
+       <div class = 'download' >
+           {% with messages = get_flashed_messages() %}
+         {% if messages %}
+               {% for message in messages %}
+
+                    <p>{{ message }}</p>
+               {% endfor %}
+         {% endif %}
+      {% endwith %}
+
+        <br><br><br><br>
+         <a href="{{url_for('download_img')}}" ><button class = 'bt btn-default'>DOWNLOAD</button></a>
+
+      </div>
+      </div>      
+   </header>
+
+   
+</body> 
+</html>
+

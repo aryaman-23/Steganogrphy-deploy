@@ -1,0 +1,71 @@
+*{
+	margin = 0;
+	padding = 0;
+	font-family: Century Gothic;
+}
+
+header{
+	background-color: orange;
+	text-align: center;
+	height: 100vh;
+	background-size: cover;
+}
+.main a{
+	position: absolute;
+    top: 10%; 
+    font-size: 30px;
+    left: 37%; 
+}
+
+.select1{
+	position: absolute;
+	top: 45%;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+
+.Text{
+	position: absolute;
+	top:20%; 
+	left: 28%;
+	text-align: center;
+}
+
+.Text h1{
+	font-size: 55px;
+	color : #fff;
+}
+.btn{
+	position: absolute;
+	top: 75%;
+	left: 40%;
+}
+
+.select1 form input{ 
+	cursor: pointer;
+}
+.btn button{
+	border: none;
+  color: blue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.download{
+    position: relative;
+}
+
+.bt btn-default{
+    position: absolute;
+    top: 75%;
+    left: 60%;
+}
+
